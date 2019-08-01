@@ -10,6 +10,6 @@ RUN apk add --no-cache jq curl
 
 ARG AWS_CLI_VERSION
 
-RUN pip install --user awscli==$AWS_CLI_VERSION
+RUN pip install --user awscli==1.16.95
 
 ENTRYPOINT [ "aws" ]
